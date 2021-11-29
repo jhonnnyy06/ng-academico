@@ -1,0 +1,17 @@
+<div class="row">
+	<form [formGroup]="dataForm" class="col s12">
+		<input type="hidden" formControlName="id" />
+		<div class="row">
+			<div class="input-field col s12">
+				<input formControlName="nombre" id=" txtName" type="text">
+				<label class="active" for="txtName">Nombre</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<button type="button" class="btn btn-success" (click)="SaveRecord()">Guardar</button>
+				&nbsp;<a class="btn btn-warning orange" routerLink="/parametros/listar-tiposComite">Cancelar</a>
+			</div>
+		</div>
+	</form>
+</div>

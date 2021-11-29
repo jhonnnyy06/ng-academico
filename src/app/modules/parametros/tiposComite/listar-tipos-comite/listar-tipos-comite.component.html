@@ -1,0 +1,35 @@
+<br>
+<a routerLink="/parametros/crear-tiposComite" class="btn btn-success">Agregar</a>
+<fieldset>
+	<legend>Listado de registros</legend>
+	<table>
+		<thead>
+			<tr>
+				<th>
+					id
+				</th>
+				<th>
+					Nombre
+				</th>
+				<th>
+					Acciones
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let r of recordList">
+				<td>
+					{{r.id}}
+				</td>
+				<td>
+					{{r.nombre}}
+				</td>
+				<th>
+					<a routerLink="/parametros/editar-tiposComite/{{r.id}}" class="btn btn-warning orange">Editar</a>
+					&nbsp;
+					<a routerLink="/parametros/eliminar-tiposComite/{{r.id}}" class="btn btn-warning red">Eliminar</a>
+				</th>
+			</tr>
+		</tbody>
+	</table>
+</fieldset>

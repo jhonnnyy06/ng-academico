@@ -1,0 +1,23 @@
+<div class="row">
+	<div class="row">
+		<div class="input-field col s12">
+
+			<strong>¿Está seguro(a) de eliminar el registro con la siguiente información?</strong>
+			<br />
+			<ul>
+				<li>
+					id: {{id}}
+				</li>
+				<li>
+					Tipo De Vinculacion: {{nombre}}
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="input-field col s12">
+			<button type="button" class="btn btn-success" (click)="RemoveRecord()">Confirmar</button>
+			&nbsp;<a class="btn btn-warning orange" routerLink="/parametros/listar-tipoVinculacion">Cancelar</a>
+		</div>
+	</div>
+</div>
