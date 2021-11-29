@@ -4,7 +4,7 @@
 		<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 		<ul class="right hide-on-med-and-down">
 			<li *ngIf="activeSession"><a routerLink="parametros/listar-jurado">Jurado</a></li>
-			<li *ngIf="activeSession"><a routerLink="">Proponente</a></li>
+			<li *ngIf="activeSession"><a routerLink="parametros/listar-proponente">Proponente</a></li>
 			<li *ngIf="activeSession"><a routerLink="">Solicitud</a></li>
 			<li *ngIf="activeSession"><a routerLink="parametros/listar-areaInvestigacion">Area de Investigacion</a></li>
 			<li *ngIf="activeSession"><a routerLink="parametros/listar-modalidad">Modalidad</a></li>
@@ -24,11 +24,16 @@
 </nav>
 
 <ul class="sidenav" id="mobile-demo">
+	<li *ngIf="activeSession"><a routerLink="parametros/listar-jurado">Jurado</a></li>
+	<li *ngIf="activeSession"><a routerLink="parametros/listar-proponente">Proponente</a></li>
+	<li *ngIf="activeSession"><a routerLink="">Solicitud</a></li>
+	<li *ngIf="activeSession"><a routerLink="parametros/listar-areaInvestigacion">Area de Investigacion</a></li>
 	<li *ngIf="activeSession"><a routerLink="parametros/listar-modalidad">Modalidad</a></li>
 	<li *ngIf="activeSession"><a routerLink="parametros/listar-tipoVinculacion">Tipo Vinculacion</a></li>
-	<li *ngIf="activeSession"><a routerLink="parametros/listar-tiposComite">Tipos Comite</a></li>
-	<li *ngIf="activeSession"><a routerLink="parametros/listar-areaInvestigacion">Area de Investigacion</a></li>
-	<li *ngIf="activeSession"><a routerLink="parametros/listar-facultad">Facultad</a></li>
 	<li *ngIf="!activeSession"><a routerLink="seguridad/inicio-sesion">Inicio Sesion</a></li>
 	<li *ngIf="activeSession"><a routerLink="seguridad/cerrar-sesion">Cerrar Sesion</a></li>
+	<li class="tab" *ngIf="activeSession"><a routerLink="parametros/listar-facultad">Facultad</a></li>
+	<li class="tab" *ngIf="activeSession"><a routerLink="parametros/listar-departamento">Departamento</a></li>
+	<li class="tab" *ngIf="activeSession"><a routerLink="parametros/listar-tiposComite">Tipos Comite</a></li>
+	<li class="tab" *ngIf="activeSession"><a routerLink="">Tipos Solicitud</a></li>
 </ul>

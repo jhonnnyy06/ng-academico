@@ -39,6 +39,10 @@ import { EditarCorreoNotificacionComponent } from './correoNotificacion/editar-c
 import { EliminarCorreoNotificacionComponent } from './correoNotificacion/eliminar-correo-notificacion/eliminar-correo-notificacion.component';
 import { ListarCorreoNotificacionComponent } from './correoNotificacion/listar-correo-notificacion/listar-correo-notificacion.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CrearProponenteComponent } from './proponente/crear-proponente/crear-proponente.component';
+import { EditarProponenteComponent } from './proponente/editar-proponente/editar-proponente.component';
+import { EliminarProponenteComponent } from './proponente/eliminar-proponente/eliminar-proponente.component';
+import { ListarProponenteComponent } from './proponente/listar-proponente/listar-proponente.component';
 
 @NgModule({
   declarations: [
@@ -78,6 +82,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     EditarCorreoNotificacionComponent,
     EliminarCorreoNotificacionComponent,
     ListarCorreoNotificacionComponent,
+    CrearProponenteComponent,
+    EditarProponenteComponent,
+    EliminarProponenteComponent,
+    ListarProponenteComponent,
   ],
   imports: [
     CommonModule,

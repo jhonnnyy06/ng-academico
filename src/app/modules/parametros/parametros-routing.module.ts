@@ -28,6 +28,10 @@ import { CrearDepartamentoComponent } from './departamento/crear-departamento/cr
 import { EditarDepartamentoComponent } from './departamento/editar-departamento/editar-departamento.component';
 import { EliminarDepartamentoComponent } from './departamento/eliminar-departamento/eliminar-departamento.component';
 import { ListarDepartamentoComponent } from './departamento/listar-departamento/listar-departamento.component';
+import { CrearProponenteComponent } from './proponente/crear-proponente/crear-proponente.component';
+import { EditarProponenteComponent } from './proponente/editar-proponente/editar-proponente.component';
+import { EliminarProponenteComponent } from './proponente/eliminar-proponente/eliminar-proponente.component';
+import { ListarProponenteComponent } from './proponente/listar-proponente/listar-proponente.component';
 
 const routes: Routes = [
   //Rutas Modalidad
@@ -158,6 +162,25 @@ const routes: Routes = [
   {
     path: 'eliminar-departamento/:id',
     component: EliminarDepartamentoComponent,
+  },
+  /****************************************************************** */
+  // Rutas Proponente
+
+  {
+    path: 'listar-proponente',
+    component: ListarProponenteComponent,
+  },
+  {
+    path: 'crear-proponente',
+    component: CrearProponenteComponent,
+  },
+  {
+    path: 'editar-proponente/:id',
+    component: EditarProponenteComponent,
+  },
+  {
+    path: 'eliminar-proponente/:id',
+    component: EliminarProponenteComponent,
   },
 ];
 
